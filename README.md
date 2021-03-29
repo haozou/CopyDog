@@ -17,6 +17,9 @@
 ##### Git
 1. Installing Git Command tool
 
+##### MySql
+1. Installing MySql server and client for data persistent layer <https://dev.mysql.com/downloads/installer/>
+
 ##### IDE for development
 
 1. We recommend using Intellij for local development IDE. You can install Intellij Community version from <https://www.jetbrains.com/idea/download/#section=windows>
@@ -55,11 +58,17 @@
    git checkout -b user/<alias>/<branchName>
    ```
 
-5. Run the following command to run the application and then you can go to localhost:8080 in your browser. We only support login using github account right now, you can login using github account.
+5. Before running the application, you need to create a database(copy_dog) in mysql db. In copy_dog/backend/restservice/src/main/resources/application.properties, make sure you properly configure the database's username and password
+   ```bash
+   mysql -u root 
+   # in mysql terminal
+   create database copy_dog
+   ```
+6. Run the following command to run the application and then you can go to localhost:8080 in your browser. We only support login using github account right now, you can login using github account.
    ```bash
    mvn spring-boot:run
    ```
-6. You can go to http://localhost:8080/swagger-ui/#/ to play with the supported restapi.
+7. You can go to http://localhost:8080/swagger-ui/#/ to play with the supported restapi.
 
 ---------------------------
 
