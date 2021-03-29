@@ -2,7 +2,7 @@
 
 - ### DEV Setup:
 
-
+----------------
 
 ##### Java JDK 8
 
@@ -21,25 +21,29 @@
 
 1. We recommend using Intellij for local development IDE. You can install Intellij Community version from <https://www.jetbrains.com/idea/download/#section=windows>
 
+
+----------------
+
+
 - ### Setup local code base and development
 
 1. Clone this repo with the following command:
 
    ```bash
-   git clone https://msasg.visualstudio.com/DefaultCollection/Bing_Ads/_git/NativeAds_Spark
+   git clone https://github.com/haozou/copy_dog.git
    ```
 
    or if you use ssh keys to manage the repo
 
    ```bash
-   git clone msasg@vs-ssh.visualstudio.com:v3/msasg/Bing_Ads/NativeAds_Spark
+   git clone git@github.com:haozou/copy_dog.git
    ```
 
 2. Build the code base with the following command:
-   In your project base directory, checkout dev branch and build the project
+   In your project base directory, checkout main branch and build the project
 
    ```bash
-   git checkout dev
+   git checkout main
    mvn clean install -DskipTests
    ```
 
@@ -51,3 +55,13 @@
    git checkout -b user/<alias>/<branchName>
    ```
 
+5. Run the following command to run the application and then you can go to localhost:8080 in your browser. We only support login using github account right now, you can login using github account.
+   ```bash
+   mvn spring-boot:run
+   ```
+6. You can go to http://localhost:8080/swagger-ui/#/ to play with the supported restapi.
+
+---------------------------
+
+- ### Build and Release
+TODO: We need to define build and release here.
