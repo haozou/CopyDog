@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: d1e7e4dc363427f77035
+            clientSecret: a7555abbabcc08cf8d3958ba32557a995b280000
+          google:
+            client-id: google-client-id
+            client-secret: google-client-secret
+
+copydog:
+  app:
+    jwtSecret: copydogSecretKey
+    jwtExpirationMs: 86400000

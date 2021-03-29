@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.longshit.copydog</groupId>
+    <artifactId>copydog</artifactId>
+    <packaging>pom</packaging>
+    <description>copy dog backend</description>
+    <version>0.1.0-SNAPSHOT</version>
+    <name>stock_follower</name>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <scala.version>2.12.8</scala.version>
+        <encoding>UTF-8</encoding>
+        <spring.version>2.4.3</spring.version>
+    </properties>
+
+    <modules>
+        <module>restservice</module>
+        <module>common</module>
+    </modules>
+
+
+</project>
